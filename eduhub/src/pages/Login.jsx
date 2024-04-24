@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from '../assets/logo.jpg';
+import {  Link } from "react-router-dom";
 
 const Login = () => {
   return (
@@ -34,18 +35,18 @@ const Login = () => {
           />
         </div>
         <div className="flex justify-center">
-          <button
+          <Link to="/home"><button
             className="mb-5 mt-3 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
             type="submit"
           >
             Sign In
-          </button>
+          </button></Link>
         </div>
         <div className="text-center">
           <span className="mr-1">Don't have an account?</span>
-          <a href="#" className="text-blue-500 hover:underline">
+          <Link to="/register" className="text-blue-500 hover:underline">
             Create New Account
-          </a>
+          </Link>
         </div>
       </form>
     </div>
