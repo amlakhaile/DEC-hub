@@ -14,7 +14,7 @@ const Navbar = () => {
             <ul className='flex pt-11'>
                 <a href="#"><li className='px-7'>Home</li></a>
                 <a href="#"><li className='px-7'>Apps</li></a>
-                <a href="#"><li className='px-7'>Notifications</li></a> 
+                <a href="#"><li className='px-7 relative'>Notifications<p className='bg-red-500 text-center pb-4 text-white px-1 text-[12px] rounded-full absolute top-0 right-2 w-[16px] h-[16px]'>1</p></li></a> 
             </ul>
         </div>
         <div className='flex text-2xl'>
