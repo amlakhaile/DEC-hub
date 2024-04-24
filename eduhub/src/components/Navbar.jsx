@@ -1,6 +1,7 @@
 import React from 'react'
 import logo from '../assets/logo.jpg';
 import { CgProfile } from "react-icons/cg";
+import {  Link } from "react-router-dom";
  
 
 const Navbar = () => {
@@ -21,7 +22,9 @@ const Navbar = () => {
             <ul className='flex pt-11'>
                 <li className='pt-1'><CgProfile /></li>
                 <a href=""><li className='pl-1 text-[20px]'>Haileamlak</li></a>
+
             </ul>
+            <Link to="/" className='mt-10'><a href="" className='text-xl pl-[70px]'>logout</a></Link>
            
         </div>
       
