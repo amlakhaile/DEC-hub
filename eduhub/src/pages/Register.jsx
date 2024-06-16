@@ -2,17 +2,17 @@ import React from 'react'
 import logo from '../assets/logo.jpg';
 import { Link } from "react-router-dom";
 
-const Register = () => {
-  return (
 
+
+const Register = () => {
+
+  return (
     <div className='flex h-screen items-center justify-evenly '>   
-        
-      <div className="bg-white w-[400px] mx-auto p-11">
+     <div className="bg-white w-[400px] mx-auto p-11">
       <div className="mb-7 pl-[96px]"><img src={logo} alt="Logo" className='w-[120px]'/></div> 
       
       <h2 className="text-2xl font-bold mb-4 text-center">Register</h2>
-
-      <form className="space-y-4">
+      <form className="space-y-4" >
         <div>
           <label htmlFor="username" className="block mb-2">
             Username
@@ -20,6 +20,7 @@ const Register = () => {
           <input
             type="text"
             id="username"
+            // value={username}     
             className="w-full border border-gray-300 rounded-md px-4 py-2"
           />
         </div>
@@ -30,6 +31,8 @@ const Register = () => {
           <input
             type="email"
             id="email"
+            // value={email}
+  
             className="w-full border border-gray-300 rounded-md px-4 py-2"
           />
         </div>
@@ -40,6 +43,8 @@ const Register = () => {
           <input
             type="password"
             id="password"
+            // value={password}
+
             className="w-full border border-gray-300 rounded-md px-4 py-2"
           />
         </div>
@@ -56,8 +61,6 @@ const Register = () => {
           </Link>
         </div>
       </form>
-    
-   
  
     </div>
    

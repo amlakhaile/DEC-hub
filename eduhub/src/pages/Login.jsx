@@ -2,7 +2,9 @@ import React from 'react'
 import logo from '../assets/logo.jpg';
 import {  Link } from "react-router-dom";
 
+
 const Login = () => {
+
   return (
     <div className='flex h-screen items-center justify-evenly mx-11'>
     <div className='px-11 mx-11 mb-11 pb-11'>
@@ -10,7 +12,8 @@ const Login = () => {
      
     </div>
     <div>
-    <form className="bg-white w-[400px] pr-11 pt-6 pb-8 mb-4 mr-11">
+
+    <form className="bg-white w-[400px] pr-11 pt-6 pb-8 mb-4 mr-11" >
         <div className="mb-4">
         <h1 className='pl-[135px] text-[20px] font-bold pb-7  text-gray-700'>DEC HUB</h1>
           <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="ID">
@@ -20,6 +23,8 @@ const Login = () => {
             className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
             id="ID"
             type="ID"
+         
+
             placeholder="ID"
           />
         </div>
@@ -32,6 +37,8 @@ const Login = () => {
             id="password"
             type="password"
             placeholder="Password"
+     
+
           />
         </div>
         <div className="flex justify-center">
